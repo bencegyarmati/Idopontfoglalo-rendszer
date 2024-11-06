@@ -1,16 +1,14 @@
-import Appointment from "./Appointment";
-
-interface Nyitvatartas {
-    nap: string;
-    napIndex: number;
-    tol: string;
-    ig: string;
+export interface Hairdresser {
+    nev: string;
+    nyitvatartas: {
+      nap: string;
+      napIndex: number;
+      tol: string;
+      ig: string;
+    }[];
+    idopontfoglals: {
+      nev: string;
+      datum: string;
+      ora: string;
+    }[];
   }
-  
-  interface Hairdresser {
-    neve: string;
-    nyitvatartas: Nyitvatartas[];
-    idopontfoglalas:Appointment[];
-  }
-  
-  export default Hairdresser;
